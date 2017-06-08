@@ -1,0 +1,113 @@
+/* Buttons */
+.btn {
+	color: #000;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 9px 15px;
+	border: solid 1px #000;
+	border-radius: 100px;
+	transition: all ease .5s;
+	cursor: pointer;
+
+	&:hover {
+		background: #000;
+		color: #fff;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.btn-lg {
+	min-width: 370px;
+}
+
+.btn-sm {
+	min-width: 270px;
+}
+
+.btn-xs {
+	min-width: 170px;
+}
+
+.btn-xxs {
+	min-width: 118px;
+}
+
+.btn-white-border {
+	background: transparent;
+	border-color: #fff;
+	color: #fff;
+
+	&:hover {
+		background: #fff;
+		color: #000;
+	}
+}
+
+.btn-mobile-full {
+	@media @mobile {
+		width: 100%;
+		max-width: 400px;
+	}
+}
+
+.btn-mobile-lg {
+	@media @mobile {
+		min-width: 220px;
+	}
+}
+
+.btn-mobile-sm {
+	@media @mobile {
+		min-width: 180px;
+	}
+}
+
+.btn-mobile-xs {
+	@media @mobile {
+		min-width: 170px;
+	}
+}
+
+
+
+.btn-blue {
+	background: #2096f3;
+	border-color: #2096f3;
+	color: #fff;
+
+	&:hover {
+		background: #ffd07f;
+		border-color: #ffd07f;
+		color: #000;
+	}
+}
+
+.btn-yellow {
+	background: #ffd07f;
+	border-color: #ffd07f;
+	color: #000;
+
+	&:hover {
+		background: #2096f3;
+		border-color: #2096f3;
+		color: #fff;
+	}
+}
+
+.btn-yellow-to-white {
+	background: #ffd07f;
+	border-color: #ffd07f;
+	color: #000;
+
+	&:hover {
+		background: #fff;
+		border-color: #fff;
+		color: #000;
+	}
+}

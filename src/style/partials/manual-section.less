@@ -1,0 +1,146 @@
+/* Manual Section */
+.manual-section {
+	background: #fff;
+	padding: 187px 0 197px;
+
+	@media @tablet {
+		padding: 80px 0 50px;
+	}
+
+	@media @mobile {
+		padding: 7px 0 14px;
+	}
+
+	.main-holder {
+		@media @mobile-xs {
+			padding: 0;
+		}
+	}
+}
+
+.manual-image {
+	position: relative;
+	display: block;
+
+	@media @tablet {
+		display: none;
+	}
+
+	.manual-tip {
+		font-family: 'Shadows Into Light', cursive;
+		color: #4a4a4a;
+		font-size: 28px;
+		font-weight: 400;
+		line-height: 1.2;
+		box-shadow: 0 14px 28px 5px rgba(0, 0, 0, 0.08);
+		border-radius: 10px;
+		background-color: #fff;
+		padding: 30px 20px;
+		position: absolute;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			margin: 0 0 -24px;
+			background: url('../img/custom-arrow.png');
+			background-repeat: no-repeat;
+			width: 44px;
+			height: 72px;
+		}
+
+		
+		.icon {
+			float: left;
+			width: 60px;
+			margin: 5px 10px 0 0;
+
+			&:before {
+				font-size: 50px;
+			}
+		}
+
+		.text {
+			display: block;
+			overflow: hidden;
+			margin: 10px 0 0;
+		}
+	}
+
+	.manual-tip-1 {
+		max-width: 290px;
+		top: 56%;
+		left: 7%;
+		
+		&:after {
+			transform: translateX(-50%) rotate(25deg) scale(-1,1);
+		}
+	}
+
+	.manual-tip-2 {
+		max-width: 470px;
+		bottom: -12%;
+		left: 8%;
+
+		@media @desktop-xl {
+			max-width: 370px;
+		}
+
+		&:after {
+			left: 100px;
+			transform: translateX(-50%) rotate(25deg) scale(-1,1);
+		}
+	}
+
+	.manual-tip-3 {
+		max-width: 420px;
+		bottom: 0%;
+		right: 3%;
+
+		@media @desktop-xl {
+			max-width: 350px;
+		}
+
+		&:after {
+			left: auto;
+			right: 70px;
+			transform: translateX(-50%) rotate(-25deg);
+		}
+	}
+
+}
+
+/* Manual Mobile Section */
+.manual-image-mobile {
+	display: none;
+	max-width: 600px;
+	margin: 0 auto;
+
+	@media @tablet {
+		display: block;
+	}
+
+	.img-hold {
+		overflow: hidden;
+		margin: 0 0 20px;
+		text-align: center;
+
+		@media @mobile-xs {
+			margin: 0 0 10px;
+		}
+
+		img {
+			max-width: 500px;
+			width: 100%;
+			margin: 0 auto;
+
+			@media @mobile-xs {
+				width: auto;
+				margin: 0;
+				max-width: 393px;
+			}
+		}
+	}
+}

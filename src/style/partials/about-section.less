@@ -1,0 +1,129 @@
+/* About Section */
+.about-section {
+	background: url('../img/background-image-4.jpg');
+
+	@media @tablet {
+		padding: 60px 0 60px;
+	}
+
+	@media @mobile {
+		background-position: 50% 50%;
+		padding: 23px 0 0;
+	}
+
+	.content-box {
+
+		.col {
+			width: 50%;
+			float: left;
+			padding: 65px 50px 60px 50px;
+
+			@media @desktop {
+				padding: 40px 40px 34px 40px;
+			}
+
+			@media @mobile {
+				width: 100%;
+				float: none;
+				padding: 32px 21px 26px;
+				position: relative;
+			}
+
+			&:first-child {
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 1px;
+					height: 240px;
+					background: #e7e7e7;
+
+					@media @mobile {
+						top: 100%;
+						left: 20px;
+						right: 20px;
+						bottom: auto;
+						height: 1px;
+						width: auto;
+						background: #e7e7e7;
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+
+		.hold {
+			max-width: 377px;
+			margin: 0 auto;
+		}
+
+		.principles-box {
+			.hold {
+				max-width: 360px;
+			}
+			.title {
+				margin: 0 0 34px;
+
+				@media @mobile {
+					margin: 0 0 22px;
+				}
+			}
+		}
+
+		.title {
+			color: #2096f3;
+			margin: 0 0 22px;
+		}
+
+		.text {
+			font-size: 14px;
+			line-height: 1.5;
+
+			p {
+				margin: 0 0 15px;
+			}
+		}
+
+		.text-with-icon {
+			margin: 0 0 51px;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			@media @mobile {
+				margin: 0 0 17px;
+			}
+		}
+
+		.icon-part {
+			float: left;
+			width: 65px;
+			margin: -4px 35px 0 0;
+
+			@media @mobile {
+				width: 35px;
+				margin: -2px 15px 0 0;
+			}
+
+			.icon {
+
+				&:before {
+					font-size: 65px;
+					color: #000;
+
+					@media @mobile {
+						font-size: 32px;
+					}
+				}
+			}
+		}
+
+		.text-part {
+			overflow: hidden;
+		}
+	}
+}

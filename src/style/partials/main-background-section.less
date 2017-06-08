@@ -1,0 +1,50 @@
+/* Main Background Image */
+.main-background-image {
+	/*background: url('../img/background.jpg');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 54px 0 0;
+
+	@media @tablet {
+		padding: 60px 0 60px;
+	}
+
+	@media @mobile {
+		background-position: 50% 50%;
+		padding: 23px 0 0;
+	}
+
+	.title-box {
+		color: #fff;
+		margin: 0 0 45px 100px;
+
+		@media @tablet {
+			margin: 0 0 30px 50px;
+		}
+
+		@media @mobile {
+			margin: 0 0 30px;
+			text-align: center;
+		}
+	}
+
+	.content-box {
+		.clearfix;
+		background: #fff;
+		box-shadow: 0 14px 28px 5px rgba(0, 0, 0, 0.08);
+		margin: 0 0 -85px;
+		position: relative;
+		z-index: 2;
+		border-radius: 10px;
+
+		@media @tablet {
+			margin: 0;
+		}
+
+		@media @mobile {
+			box-shadow: none;
+			margin: 0 -20px;
+			border-radius: 0;
+		}
+	}
+}

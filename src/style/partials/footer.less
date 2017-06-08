@@ -1,0 +1,197 @@
+/* Footer */
+.footer {
+	padding: 48px 0 34px;
+	color: #4a4a4a;
+	background: #fff;
+
+	@media @mobile {
+		padding: 36px 0 34px;
+	}
+
+	a {
+		color: #4a4a4a;
+		text-decoration: none;
+
+		&:hover {
+			color: #337ab7;
+		}
+	}
+
+	.mobile-hide {
+		display: block;
+
+		@media @mobile {
+			display: none;
+		}
+	}
+
+	.mobile-show {
+		display: none;
+
+		@media @mobile {
+			display: block;
+		}
+	}
+}
+
+.top-footer {
+	.clearfix;
+	padding: 0 0 21px;
+	line-height: 1.6;
+
+	@media @mobile {
+		padding: 0;
+	}
+}
+
+.footer-info {
+	float: left;
+	width: 50%;
+	padding: 0 30px 0 0;
+
+	@media @tablet {
+		width: 40%;
+	}
+
+	@media @mobile {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.footer-info-box {
+	.clearfix;
+	margin: 0 0 27px;
+
+	.icon-box {
+		float: left;
+		margin: 5px 50px 0 0;
+		width: 47px;
+
+		@media @tablet {
+			margin: 5px 30px 0 0;
+		}
+
+		@media @mobile {
+			margin: 5px 30px 0 0;
+		}
+
+		.icon {
+			display: block;
+
+			&:before {
+				font-size: 47px;
+				color: #337ab7;
+			}
+		}
+	}
+
+	.text-box {
+		max-width: 360px;
+		overflow: hidden;
+
+		@media @mobile {
+			max-width: 220px;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.contacts {
+
+		.mobile-hide {
+			&.tel {
+				display: inline-block;
+
+				@media @mobile {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.footer-links {
+	.clearfix;
+	float: right;
+	width: 50%;
+	padding: 6px 0 0;
+
+	@media @tablet {
+		width: 60%;
+	}
+
+	@media @mobile {
+		display: none;
+	}
+
+	.footer-socials {
+		float: left;
+		width: 35%;
+		padding: 0 0 0 15px;
+		
+		ul {
+			.listreset;
+		}
+
+		li {
+			margin: 0 0 10px;
+		}
+
+		a {
+
+		}
+
+		span {
+			display: inline-block;
+			color: #337ab7;
+			width: 20px;
+			text-align: center;
+			margin: 0 10px 0 0;
+		}
+	}
+
+	.footer-navigation {
+		float: right;
+		width: 65%;
+		padding: 0 0 0 10px;
+		
+		ul {
+			.listreset;
+			column-width: 50%;
+			column-count: 2;
+			column-gap: 0;
+			text-align: left;
+		}
+
+		li {
+			margin: 0 0 10px;
+		}
+
+		a {
+
+		}
+	}
+}
+
+.bottom-footer {
+	color: #878787;
+	font-size: 12px;
+	line-height: 1.5;
+
+	@media @mobile {
+		text-align: left;
+		padding: 20px 0 0 30px;
+	}
+
+	a {
+		color: #878787;
+
+		&:hover {
+			color: #337ab7;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/* Burger Menu */
+.burger-menu {
+	cursor: pointer;
+	display: none;
+	float: left;
+	color: #2096f3;
+
+	@media @tablet {
+    	display: block;
+    }
+
+    .line-1, 
+	.line-2, 
+	.line-3 {
+		width: 20px;
+		height: 2px;
+		background-color: #2096f3;
+		margin: 5px 0;
+		transition: 0.4s;
+	}
+
+	.line-1 {
+		margin: 0 0 5px;
+	}
+}
+
+/* Burger Menu Animation */
+.change {
+
+	/* rotate first bar */
+	.line-1 {
+	    transform: rotate(-45deg) translate(-6px,6px);
+	}
+
+	/* fade out the second bar */
+	.line-2 {
+		opacity: 0;
+	}
+
+	/* rotate last bar */
+	.line-3 {
+		transform: rotate(45deg) translate(-3px,-4px);
+	}
+}
