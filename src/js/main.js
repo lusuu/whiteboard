@@ -8,4 +8,5 @@
 //= partials/burger-menu.js
 //= partials/helper.js
 //= partials/forms-cf7.js
+//= partials/swip.js
 //= partials/initialization.js
